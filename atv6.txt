@@ -1,0 +1,2 @@
+SELECT Valor FROM despesa
+WHERE Valor < 500

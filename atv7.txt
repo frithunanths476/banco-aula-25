@@ -1,0 +1,3 @@
+UPDATE despesa
+SET Valor = 500
+WHERE ID_despesa = 1;

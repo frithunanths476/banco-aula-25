@@ -1,0 +1,2 @@
+SELECT valor FROM receita
+WHERE Valor > 20
