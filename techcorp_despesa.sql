@@ -29,9 +29,7 @@ CREATE TABLE `despesa` (
   `Valor` int(11) DEFAULT NULL,
   `Descricao` varchar(256) DEFAULT NULL,
   `Categoria` varchar(256) DEFAULT NULL,
-  PRIMARY KEY (`ID_despesa`),
-  KEY `ID_usuario` (`ID_usuario`),
-  CONSTRAINT `despesa_ibfk_1` FOREIGN KEY (`ID_usuario`) REFERENCES `usuario` (`ID_usuario`)
+  FOREIGN KEY (`ID_usuario`) REFERENCES `usuario` (`ID_usuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
